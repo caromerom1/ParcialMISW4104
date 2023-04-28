@@ -1,0 +1,8 @@
+tr:last-child td {
+  border-bottom: 0;
+}
+
+tr:last-child th {
+  border-bottom: 0;
+}
+
