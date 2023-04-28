@@ -1,15 +1,15 @@
 <table class="table">
   <thead class="table-dark">
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">Marca</th>
-      <th scope="col">Línea</th>
-      <th scope="col">Modelo</th>
+      <th>#</th>
+      <th>Marca</th>
+      <th>Línea</th>
+      <th>Modelo</th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let vehicle of vehicles$ | async">
-      <th scope="row">{{ vehicle.id }}</th>
+      <th>{{ vehicle.id }}</th>
       <td>
         {{ vehicle.marca }}
       </td>
@@ -18,3 +18,7 @@
     </tr>
   </tbody>
 </table>
+
+<p *ngFor="let vehicleCount of vehicleBrandsCount$ | async">
+  Total {{vehicleCount.brand}}: {{vehicleCount.count}}
+</p>

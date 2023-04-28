@@ -6,3 +6,6 @@ tr:last-child th {
   border-bottom: 0;
 }
 
+p {
+  margin: 0;
+}
